@@ -1,8 +1,8 @@
 import cv2
 import numpy as np
 
-import segment
-from segment import Segment
+import ellipse_detection.segment as segment
+from ellipse_detection.segment import Segment
 
 
 class SegmentDetector(object):

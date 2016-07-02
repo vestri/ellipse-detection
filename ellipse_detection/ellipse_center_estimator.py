@@ -1,8 +1,8 @@
 import numpy as np
 import cv2
 
-from segment import Segment
-from segment_pair import SegmentPair
+from ellipse_detection.segment import Segment
+from ellipse_detection.segment_pair import SegmentPair
 
 
 class EllipseCenterEstimator(object):
@@ -203,7 +203,7 @@ class EllipseCenterEstimator(object):
 
         slopes = []
 
-        middle = midpoints.shape[0] / 2
+        middle = int(midpoints.shape[0] / 2)
         for i in range(middle):
             x1, y1 = midpoints[i]
             x2, y2 = midpoints[middle + i]

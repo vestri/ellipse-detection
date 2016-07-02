@@ -1,8 +1,8 @@
 import numpy as np
 import cv2
 
-from ellipse_center_estimator import EllipseCenterEstimator
-from ellipse_candidate import EllipseCandidate
+from ellipse_detection.ellipse_center_estimator import EllipseCenterEstimator
+from ellipse_detection.ellipse_candidate import EllipseCandidate
 
 
 class EllipseCandidateMaker(object):
